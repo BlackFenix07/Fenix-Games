@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+}
+
+header {
+  margin: 25px 25px;
+}
+
+header .nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+  font-size: 18px;
+}
+
+header .nav-menu-burger {
+  font-size: 21px;
+  list-style: none;
+  cursor: pointer;
+}
+
+header .nav-menu-burger a {
+  color: #ffffff;
+}
+
+header .nav-menu-burger a:hover {
+  color: teal;
+}
+
+header .nav-menu-right {
+  list-style: none;
+}
+
+header .nav-menu-right a {
+  color: #ffffff;
+}
+
+header .nav-menu-right a:hover {
+  color: teal;
+}
+
+header .container-desktop {
+  display: none;
+}
+
+main {
+  margin: 0 25px;
+}
+
+main .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin: 60px 0 100px;
+  width: 100%;
+  text-align: center;
+}
+
+main .page-title {
+  font-size: 45px;
+  font-family: "Crimpson-Pro";
+  color: teal;
+}
+
+main .main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 275px);
+  justify-content: space-around;
+  gap: 50px;
+}
+
+main .cards img {
+  width: 100%;
+}
+
+main .cards h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+main .cards a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 0;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+main .cards a:hover {
+  text-decoration: underline;
+  color: teal;
+}
+
+main .banner {
+  display: inline-block;
+  margin: 100px 0;
+  width: 625px;
+  height: 350px;
+  background: url("../images/banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main .content {
+  display: inline-block;
+  padding: 70px 0 0 15px;
+}
+
+main .content p {
+  margin: 10px 0 20px;
+}
+
+main .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+main .btn:hover {
+  text-decoration: underline;
+  color: teal;
+}
+
+main .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 100px 0 70px;
+}
+
+main .social a {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+main .social a:hover {
+  color: teal;
+}
+
+footer {
+  background: teal;
+  color: #000000;
+}
+
+footer .links {
+  padding-left: 8px;
+  line-height: 2;
+}
+
+footer .links a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+footer p {
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 675px) {
+  main .cards {
+    margin-bottom: 50px;
+  }
+
+  main .banner {
+    display: none;
+  }
+
+  footer .links a {
+    font-weight: 500;
+  }
+
+  footer p {
+    font-weight: 500;
+  }
+}

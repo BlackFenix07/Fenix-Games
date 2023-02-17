@@ -1,0 +1,38 @@
+header .container {
+  display: none;
+}
+
+header .container-desktop {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+header .nav-main-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+header .nav-menu-center {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+header .nav-menu-center li {
+  padding: 10px;
+}
+
+header .nav-menu-center li a {
+  padding: 2px;
+  font-family: "Crimpson Pro";
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .nav-menu-center li a:hover {
+  text-decoration: underline;
+  color: teal;
+}
